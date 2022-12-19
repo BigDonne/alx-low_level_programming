@@ -11,7 +11,7 @@
 
 void rev_string(char *s)
 {
-	int 1, i
+	int i = 1
 
 	char *begin_ptr, *end_ptr, ch;
 
