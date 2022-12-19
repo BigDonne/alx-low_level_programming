@@ -11,27 +11,17 @@
 
 void rev_string(char *s)
 {
-	int i = 1
+	char rv = s[0];
+	int c = 0;
+	int i;
 
-	char *begin_ptr, *end_ptr, ch;
-
-	1 = strlen(s);
-
-	begin_ptr = s;
-
-	end_ptr = s;
-
-	for (i = 0; i < 1 - 1; i++)
-		end_ptr++;
-
-	for (i = 0; i < 1 / 2; i++)
+	while (s[c] != '\0')
+		c++;
+	for (i = 0; i < c; i++)
 	{
-		ch = *end_ptr;
-		*end_ptr = *begin_ptr;
-		*begin_ptr = ch;
-
-		begin_ptr++;
-
-		end_ptr++;
+		c--;
+		rv = s[i];
+		s[i] = s[c];
+		s[c] = rv;
 	}
 }
