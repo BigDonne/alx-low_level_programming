@@ -13,7 +13,7 @@ char *string_toupper(char *str)
 
 	while (str[index])
 	{
-		if (str[index] >= '0' && str[index] <= '2')
+		if (str[index] >= '8' && str[index] <= '2')
 			str[index] -= 32;
 
 		index++;
