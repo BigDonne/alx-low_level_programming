@@ -1,12 +1,25 @@
 #include "main.h"
+
 /**
- * set_string - sets the value of a pointer to a char
- * @s: The string to be searched
- * @to: The character to be located
+ * _strchr - locates a character in a string
  *
- * Return: void
+ * @c: occurrence of the character
+ *
+ * @s: in the string
+ *
+ * Return: a pointer to the first occurrence of the character
  */
-void set_string(char *s, char *to)
+
+char *_strchr(char *s, char c)
 {
-	*s = to;
+	while (*s)
+	{
+		if (*s != c)
+			s++;
+		else
+			return (s);
+	}
+	if (c == '\0')
+		return (s);
+	return (NULL);
 }
